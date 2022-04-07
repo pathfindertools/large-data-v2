@@ -13,10 +13,10 @@ blocks:
       <!-- /HubSpot -->
     _template: embed
   - style:
-      alignment: flex-row-reverse text-left items-center
-      featureContent: w-1/2 min-h-0
-      padding: 'pt-40 pb-40 pr-10 pl-10 sm:pt-11 sm:pb-36 sm:pr-20 sm:pl-5'
-      featureImage: object-center object-scale-down
+      alignment: 'flex-row-reverse text-left items-center '
+      featureContent: 'w-1/2 min-h-0 '
+      padding: 'pt-40 pb-40 pr-10 pl-10 sm:pt-11 sm:pb-28 sm:pr-20 sm:pl-5'
+      featureImage: 'object-center object-scale-down '
       imagePadding: pt-12 pb-4 pr-0 pl-0
       labelStyles: text-white font-sans text-xl mb-0 font-bold
       headlineStyles: >-
@@ -51,38 +51,41 @@ blocks:
         backgroundColor: white
     _template: feature
   - style:
-      alignment: 'flex-row-reverse text-left items-center '
-      featureContent: 'w-3/4 min-h-0 '
-      padding: pt-20 pb-20 pr-10 pl-10
-      featureImage: 'object-center object-scale-down '
-      imagePadding: pt-20 pb-20 pr-20 pl-10
+      textAlignment: text-left
+      minHeight: min-h-0
+      padding: 'pt-20 pb-20 pr-10 pl-10 sm:pt-10 sm:pb-10 sm:pr-5 sm:pl-5'
+      width: normal
       labelStyles: 'text-black font-sans text-sm mb-0 '
-      headlineStyles: 'text-white font-sans text-5xl mb-0 '
-      subheadStyles: 'text-gray-light font-sans text-base mb-5 '
-      textStyles: 'text-black font-sans undefined mb-0 '
+      headlineStyles: >-
+        text-white font-sans text-5xl mb-0  sm:text-white sm:font-sans
+        sm:text-3xl sm:mb-0 
+      subheadStyles: 'text-black font-sans text-3xl mb-0 '
+      textStyles: 'text-gray-light font-sans text-base mb-7 '
       contentOrder: labelHeadingsContent
     background:
       fillStyles: bg-black
     label: ''
-    headline: 'Storage providers, Friday is your last chance to earn a special bounty'
-    subhead: >-
+    headline: >-
+      Storage providers, participate in a grant to help large data clients
+      onboard their datasets
+    subhead: ''
+    body: >
       Help a client onboard PiB-scale data to the network and you may be
       eligible for a bounty.
-    body: ''
     buttons:
-      - label: 'Apply now, before the 3.19 deadline'
+      - label: Apply Now
         link: 'https://www.dgm.xyz/grants/kWQa2elNDgkVI24GvyGy'
         type: solid
         buttonFillStyles: from-primary to-accent1 bg-gradient-to-tl
         textColor: white
         backgroundColor: primary
-    _template: feature
+    _template: banner
   - style:
       alignment: 'flex-row-reverse text-left items-center '
       featureContent: 'w-1/2 min-h-0 '
-      padding: 'pt-48 pb-48 pr-10 pl-10 sm:pt-12 sm:pb-20 sm:pr-5 sm:pl-5'
+      padding: 'pt-10 pb-10 pr-0 pl-10 sm:pt-10 sm:pb-0 sm:pr-5 sm:pl-5'
       featureImage: object-right object-scale-down to-edge
-      imagePadding: undefined undefined undefined undefined
+      imagePadding: 'undefined undefined undefined undefined sm:pt-2 sm:pb-0 sm:pr-0 sm:pl-0'
       labelStyles: 'text-gray-light undefined text-7xl mb-0 '
       headlineStyles: >-
         text-gray-dark undefined text-4xl mb-0  sm:text-gray-dark sm:font-sans
@@ -106,11 +109,13 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-20 pb-20 pr-10 pl-10
+      padding: 'pt-20 pb-20 pr-10 pl-10 sm:pt-14 sm:pb-px sm:pr-5 sm:pl-5'
       contentWidth: w-8/12
       columns: '4'
       labelStyles: 'text-black font-sans text-sm mb-0 '
-      headlineStyles: 'text-white font-sans text-5xl mb-16 '
+      headlineStyles: >-
+        text-white font-sans text-5xl mb-16  sm:text-white sm:font-sans
+        sm:text-3xl sm:mb-5 
       subheadStyles: 'text-black font-sans text-3xl mb-0 '
       textStyles: 'text-black font-sans undefined mb-0 '
       contentOrder: labelHeadingsContent
@@ -120,7 +125,9 @@ blocks:
       type: solid
       imageStyles: ' undefined undefined undefined'
       labelStyles: 'text-white undefined undefined mb-0 '
-      headlineStyles: 'text-white undefined text-5xl mb-3 '
+      headlineStyles: >-
+        text-white undefined text-5xl mb-3 sm:text-white sm:font-sans
+        sm:text-3xl sm:mb-0
       subheadStyles: 'text-white undefined text-lg mb-0 '
       textStyles: 'text-white undefined text-lg mb-0 '
       buttonType: solid
@@ -152,14 +159,17 @@ blocks:
           Applications, projects, and funded startups
     _template: photoCards
   - style:
-      textAlignment: left
+      textAlignment: text-left
+      minHeight: min-h-0
       padding: 'pt-16 pb-16 pr-10 pl-10 sm:pt-10 sm:pb-10 sm:pr-5 sm:pl-5'
       contentWidth: w-8/12
       columns: '3'
-      labelStyles: text-gray undefined text-xs mb-0 undefined
-      headlineStyles: text-black undefined text-5xl mb-16 undefined
-      subheadStyles: text-black undefined text-3xl mb-0 undefined
-      textStyles: text-black undefined text-lg mb-0 undefined
+      labelStyles: 'text-gray undefined text-xs mb-0 '
+      headlineStyles: >-
+        text-black undefined text-5xl mb-16  sm:text-black sm:font-sans
+        sm:text-3xl sm:mb-12 
+      subheadStyles: 'text-black undefined text-3xl mb-0 '
+      textStyles: 'text-black undefined text-lg mb-0 '
       contentOrder: labelHeadingsContent
     cardStyle:
       type: solid
@@ -277,7 +287,9 @@ blocks:
       padding: 'undefined pb-10 pr-10 pl-10 sm:pt-0 sm:pb-0 sm:pr-5 sm:pl-5'
       width: normal
       labelStyles: text-black undefined text-sm mb-0 undefined
-      headlineStyles: text-black undefined text-5xl mb-0 undefined
+      headlineStyles: >-
+        text-black undefined text-5xl mb-0 sm:text-black sm:font-sans
+        sm:text-3xl sm:mb-0
       subheadStyles: text-black undefined text-3xl mb-0 undefined
       textStyles: text-black undefined undefined mb-8 undefined
       contentOrder: labelHeadingsContent
@@ -302,7 +314,9 @@ blocks:
       type: solid
       imageStyles: ' undefined undefined mb-9'
       labelStyles: text-white undefined mb-0 undefined
-      headlineStyles: text-white text-5xl mb-0 undefined
+      headlineStyles: >-
+        text-white text-5xl mb-0 undefined sm:text-white sm:font-sans
+        sm:text-3xl sm:mb-0
       subheadStyles: text-white text-lg mb-0 undefined
       textStyles: text-white text-xl mb-0 undefined
       buttonType: solid
@@ -359,7 +373,7 @@ blocks:
       type: transparent
       imageStyles: h-32 object-contain object-left mb-9
       labelStyles: text-white text-lg mb-0 undefined
-      headlineStyles: text-white text-5xl mb-0 undefined
+      headlineStyles: 'text-white text-5xl mb-0 sm:text-white sm:font-sans sm:text-3xl sm:mb-0'
       subheadStyles: text-white text-3xl mb-6 undefined
       textStyles: text-white text-lg mb-0 undefined
       buttonType: solid
@@ -401,18 +415,19 @@ blocks:
     navigationLabel: Tools
     _template: photoCards
   - style:
-      textAlignment: left
+      textAlignment: text-left
+      minHeight: min-h-0
       padding: 'pt-20 pb-10 pr-10 pl-10 sm:pt-10 sm:pb-5 sm:pr-5 sm:pl-5'
       contentWidth: w-8/12
       columns: '3'
       labelStyles: >-
-        text-gray undefined text-4xl mb-20 undefined sm:text-gray sm:font-sans
-        sm:text-4xl sm:mb-20 sm:
+        text-gray undefined text-4xl mb-20  sm:text-gray sm:font-sans sm:text-xl
+        sm:mb-10 
       headlineStyles: >-
-        text-black undefined text-6xl mb-24 undefined sm:text-black sm:font-sans
-        sm:text-6xl sm:mb-24 sm:
-      subheadStyles: text-black undefined text-3xl mb-5 undefined
-      textStyles: text-black undefined undefined mb-0 undefined
+        text-black undefined text-6xl mb-24  sm:text-black sm:font-sans
+        sm:text-3xl sm:mb-10 
+      subheadStyles: 'text-black undefined text-3xl mb-5 '
+      textStyles: 'text-black undefined undefined mb-0 '
       contentOrder: labelHeadingsContent
     cardStyle:
       padding: undefined undefined undefined undefined
@@ -457,7 +472,9 @@ blocks:
       padding: 'pt-10 pb-24 pr-10 pl-10 sm:pt-5 sm:pb-10 sm:pr-5 sm:pl-5'
       columns: '3'
       labelStyles: text-black undefined text-sm mb-0 undefined
-      headlineStyles: text-black undefined text-5xl mb-0 undefined
+      headlineStyles: >-
+        text-black undefined text-5xl mb-0 sm:text-black sm:font-sans
+        sm:text-3xl sm:mb-0
       subheadStyles: text-black undefined text-3xl mb-5 undefined
       textStyles: text-black undefined undefined mb-0 undefined
       contentOrder: labelHeadingsContent
@@ -499,11 +516,13 @@ blocks:
   - style:
       alignment: 'flex-row-reverse text-left items-center '
       featureContent: 'w-1/2 min-h-0 '
-      padding: pt-20 pb-20 pr-10 pl-20
+      padding: 'pt-20 pb-20 pr-10 pl-10 sm:pt-5 sm:pb-10 sm:pr-5 sm:pl-5'
       featureImage: 'object-center object-scale-down '
-      imagePadding: pt-0 pb-0 pr-0 pl-0
+      imagePadding: 'pt-0 pb-0 pr-0 pl-0 sm:pt-5 sm:pb-0 sm:pr-0 sm:pl-0'
       labelStyles: 'text-black font-sans text-sm mb-0 '
-      headlineStyles: 'text-white font-sans text-5xl mb-5 '
+      headlineStyles: >-
+        text-white font-sans text-5xl mb-5  sm:text-white sm:font-sans
+        sm:text-3xl sm:mb-0 
       subheadStyles: 'text-black font-sans text-3xl mb-0 '
       textStyles: 'text-white font-sans text-3xl mb-10 '
       contentOrder: labelHeadingsContent
@@ -528,11 +547,12 @@ blocks:
         buttonFillStyles: bg-white
         textColor: accent4
         backgroundColor: ''
+    navigationLabel: Providers
     _template: feature
   - style:
       alignment: 'flex-row-reverse text-left items-center '
       featureContent: 'w-1/2 min-h-0 '
-      padding: 'pt-32 pb-32 pr-10 pl-10 sm:pt-0 sm:pb-0 sm:pr-5 sm:pl-5'
+      padding: 'pt-20 pb-20 pr-0 pl-10 sm:pt-0 sm:pb-0 sm:pr-5 sm:pl-5'
       featureImage: 'object-center object-scale-down '
       imagePadding: undefined undefined undefined undefined
       labelStyles: 'text-gray-light undefined text-7xl mb-0 '
@@ -569,7 +589,7 @@ blocks:
   - style:
       textAlignment: text-left
       minHeight: min-h-0
-      padding: pt-10 pb-10 pr-10 pl-10
+      padding: 'pt-10 pb-10 pr-10 pl-10 sm:pt-10 sm:pb-10 sm:pr-5 sm:pl-5'
       contentWidth: w-full
       columns: '4'
       labelStyles: 'text-black font-sans text-sm mb-0 '
