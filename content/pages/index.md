@@ -149,7 +149,7 @@ blocks:
         subhead: ''
         text: |
           Total storage capacity on the Filecoin network
-      - headline: '~3,000'
+      - headline: '~4,000'
         subhead: ''
         text: |
           Globally distributed storage providers across geographies
