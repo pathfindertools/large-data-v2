@@ -145,7 +145,7 @@ blocks:
         subhead: ''
         text: |
           Developers & Contributors building applications backed by Filecoin
-      - headline: 10 EiB+
+      - headline: 16 EiB+
         subhead: ''
         text: |
           Total storage capacity on the Filecoin network
@@ -360,13 +360,15 @@ blocks:
     navigationLabel: ''
     _template: photoCards
   - style:
-      textAlignment: left
+      textAlignment: text-left
+      minHeight: min-h-0
       padding: 'pt-16 pb-28 pr-10 pl-10 sm:pt-10 sm:pb-10 sm:pr-5 sm:pl-5'
+      contentWidth: w-full
       columns: '3'
-      labelStyles: text-gray undefined text-lg mb-0 undefined
-      headlineStyles: undefined undefined undefined undefined undefined
-      subheadStyles: text-black undefined text-3xl mb-0 undefined
-      textStyles: text-black undefined text-lg mb-0 undefined
+      labelStyles: 'text-gray undefined text-lg mb-0 '
+      headlineStyles: 'undefined undefined undefined undefined '
+      subheadStyles: 'text-black undefined text-3xl mb-0 '
+      textStyles: 'text-black undefined text-lg mb-0 '
       contentOrder: labelHeadingsContent
     cardStyle:
       padding: p-0
