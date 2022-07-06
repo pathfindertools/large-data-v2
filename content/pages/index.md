@@ -153,7 +153,7 @@ blocks:
         subhead: ''
         text: |
           Globally distributed storage providers across geographies
-      - headline: 400+
+      - headline: 700+
         subhead: ''
         text: |
           Applications, projects, and funded startups
